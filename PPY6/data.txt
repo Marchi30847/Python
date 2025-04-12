@@ -1,0 +1,2 @@
+Article(id=2, name='Apple', price=0.8, manufacturer='FruitFarm', category='Fruits', expiration_date='2025-04-15')
+Article(id=3, name='Croissant', price=3, manufacturer='KyivChlib', category='Bakery', expiration_date='2025-04-11')
