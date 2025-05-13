@@ -58,3 +58,30 @@ def task3():
         print(dict)
     else:
         print("Please enter a valid input.")
+
+words = ['banana', 'apple', 'cherry']
+morefive = list(filter(lambda word: len(word) > 5, words))
+sorted_words = sorted(words, key=lambda word: len(word))
+sorted_words.sort(key=lambda word: len(word))
+print(sorted_words)  # ['apple', 'banana', 'cherry']
+
+for word in words[:]:
+    if len(word) > 5:
+        words.remove(word)
+print(words)
+
+prev, cur = 0, 1
+prev, cur = cur, prev + 1
+
+arr = [x for x in range(1, 5)]
+print(arr)
+
+def task4(nums, words):
+    ar = []
+    for num, word in zip(nums, words):
+        ar.append(tuple([num, word]))
+
+    rt = tuple(ar)
+    return rt
+
+print(task4([1, 2, 3], ["a", "b", "c"]))
